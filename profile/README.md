@@ -39,5 +39,6 @@ grass_latte::serve_webpage();
 - [`grass-latte-py`](https://github.com/grass-latte/grass-latte-py) - Python proof-of-concept library for Grass Latte
 - [`grass-latte-server-rs`](https://github.com/grass-latte/grass-latte-server-rs) - A standalone CLI for serving the Grass Latte web interface, for when you want multiple projects to connect to the same interface but don't want to pick a specific project to serve it
 
+## Screenshot
 
 ![Grass Latte Interface](/profile/grass_latte.png)
