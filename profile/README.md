@@ -6,17 +6,30 @@ A graphical web logger enabling easier debugging - particularly with multiple th
 
 - A hierarchical, collapsable widget tree
 - No references to widgets maintained - code doesn't need to be modified to pass widget references around
-  - ```rust
+```rust
 grass_latte::send_text(["Buttons", "Incrementer", "Value"], format!("{val}"), false);
 ```
 - Multithreading support
 - Pollable buttons (no references needed)
-  - ```rust
+```rust
 while !grass_latte::poll_button(["Start"], "Start", false) {
     thread::sleep(Duration::from_millis(200));
 }
 ```
-
+- Buttons with callbacks
+```rust
+grass_latte::send_button_with_callback(
+    ["Buttons", "Incrementer"],
+    "Click button to increment".to_string(),
+    false,
+    callback.clone(),
+);
+```
+- Support for multiple projects (including different languages) to connect to the same Grass Latte web interface
+- Each Grass Latte library has the web interface bundled
+```rust
+grass_latte::serve_webpage();
+```
 
 ## Repositories
 
