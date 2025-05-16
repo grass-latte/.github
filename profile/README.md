@@ -41,4 +41,19 @@ grass_latte::serve_webpage();
 
 ## Screenshot
 
+
 ![Grass Latte Interface](/profile/grass_latte.png)
+
+
+## TODO
+Short-term
+
+- Take another look at how grass-latte-web decodes JSON and maps
+- Specify JSON schema explicitly externally to any specific implementation
+- Add versioning to the JSON schema incase multiple incompatible versions connect to the same web interface
+- Allow deletion of widgets from the web interface
+- Add image widget
+
+Long-term
+
+- Fully implement Grass Latte for Python
