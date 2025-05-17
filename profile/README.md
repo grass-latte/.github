@@ -48,8 +48,8 @@ grass_latte::serve_webpage();
 ## TODO
 Short-term
 
-- Take another look at how grass-latte-web decodes JSON and maps
-- Specify JSON schema explicitly externally to any specific implementation
+- Take another look at how grass-latte-web decodes JSON and maps it to widgets
+- Specify JSON schema externally to any specific implementation
 - Add versioning to the JSON schema incase multiple incompatible versions connect to the same web interface
 - Allow deletion of widgets from the web interface
 - Add image widget
